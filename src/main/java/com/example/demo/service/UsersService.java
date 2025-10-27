@@ -18,6 +18,9 @@ UsersRepository userRepo;
 public UsersService(UsersRepository userRepo) {
     this.userRepo = userRepo;
 }
+	public UsersService() {
+	// TODO Auto-generated constructor stub
+}
 	@SuppressWarnings("deprecation")
 	public Users getUsersById(int id) {
 		// TODO Auto-generated method stub
@@ -35,6 +38,10 @@ public UsersService(UsersRepository userRepo) {
 	public void deletebyId(int id) {
 		// TODO Auto-generated method stub
 		 userRepo.deleteById(id);
+	}
+	public void addUser(Users users) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
